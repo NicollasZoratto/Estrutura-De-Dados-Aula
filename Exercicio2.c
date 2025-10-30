@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "funcoes.c"
 
 int main() {
     
@@ -28,11 +29,13 @@ int main() {
     scanf("%f", &pretensao_salarial);
 
     printf("\n-- Valores informados --\n");
-    printf("Nome: %s\n", nome);
+    "Nome: %s\n", nome);printf(
     printf("Idade: %d\n", idade);
     printf("Cidade: %s", cidade);
     printf("Cargo: %s\n", cargo);
     printf("Pretensão Salarial: %.2f\n", pretensao_salarial);
+
+    assinatura();
 
     return 0;
 }

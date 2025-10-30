@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "funcoes.c"
 
 int main() {
 
@@ -31,6 +32,8 @@ int main() {
 
     printf("A segunda cidade é: %s\n", cidade2);
     printf("A população estimada é: %.3f\n", populacao_estimada2);
+
+    assinatura();
     
     return 0;
 }
