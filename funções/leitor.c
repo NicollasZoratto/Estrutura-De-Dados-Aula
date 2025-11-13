@@ -28,3 +28,8 @@ char* ler_texto() {
 
     return texto;
 }
+
+bool comparar_textos(texto_1, texto_2) {
+    bool e_igual = (strc(texto_a, texto_b) == 0);
+    return e_igual;
+}

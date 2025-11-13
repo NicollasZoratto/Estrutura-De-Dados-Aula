@@ -1,16 +1,19 @@
-#include <stdio.h>
+#include "../leitor.c"
 
 int main() {
+    printf("Digite um número: ");
+   int n1 = ler_int();
+   
+   printf("Digite outra número: ");
+   int n2 = ler_int();
 
-    int resultado_da_soma = 50 + 90 + 12;
-    int subtracao = 120 - 52 - 47;
-    int multiplicacao = 10 * 2 * 4;
-    float divisao = 10 / 2 / 2;
+   int soma = (n1 + n2);
 
-    printf("%d\n", resultado_da_soma);
-    printf("%d\n", subtracao);
-    printf("%d\n", multiplicacao);
-    printf("%.2f\n", divisao);
+   printf("%d + %d = %d\n", n1, n2, soma);
+   printf("%d + %d = %d\n", n1, n2, (n1 - n2));
+   printf("%d + %d = %d\n", n1, n2, (n1 * n2));
+   printf("%d + %d = %d\n", n1, n2, ((float) n1 / (float) n2));
+   
 
     return 0;
 }
